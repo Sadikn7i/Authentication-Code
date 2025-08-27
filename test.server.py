@@ -56,10 +56,10 @@ def validate_payment_request():
     is_valid = hmac.compare_digest(expected_signature, received_signature)
     
     if is_valid:
-        print("\n✅ SIGNATURE VALID\n")
+        print("\n SIGNATURE VALID\n")
         return jsonify({"message": "Success! Signature is valid."}), 200
     else:
-        print("\n❌ SIGNATURE INVALID\n")
+        print("\n SIGNATURE INVALID\n")
         return jsonify({"message": "Forbidden. Invalid signature."}), 403
 
 if __name__ == '__main__':
