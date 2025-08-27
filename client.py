@@ -62,7 +62,7 @@ if __name__ == "__main__":
         'X-Timestamp': timestamp_str 
     }
     
-    print(f"🚀 Sending request to {API_ENDPOINT}...")
+    print(f" Sending request to {API_ENDPOINT}...")
     try:
         response = requests.post(
             url=API_ENDPOINT,
